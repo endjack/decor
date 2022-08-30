@@ -20,20 +20,6 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 
 # Application definition
 
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    
-    #APPS SISDECOR
-    'home',
-    'eventos',
- 
-    
-]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -43,6 +29,28 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+# Other apps
+    "phonenumber_field",
+    
+    #APPS SISDECOR
+<<<<<<< HEAD
+    'home',
+    'eventos',
+ 
+=======
+    'home.apps.HomeConfig',
+    'calendario.apps.CalendarioConfig',
+    'clientes.apps.ClientesConfig'
+>>>>>>> b19033067acbc30b1c2f27dfcc7c535404402340
+    
 ]
 
 ROOT_URLCONF = 'sisdecor.urls'
