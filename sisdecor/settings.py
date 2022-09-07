@@ -37,19 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-# Other apps
-    "phonenumber_field",
     
     #APPS SISDECOR
-<<<<<<< HEAD
     'home',
     'eventos',
- 
-=======
-    'home.apps.HomeConfig',
-    'calendario.apps.CalendarioConfig',
     'clientes.apps.ClientesConfig'
->>>>>>> b19033067acbc30b1c2f27dfcc7c535404402340
     
 ]
 
